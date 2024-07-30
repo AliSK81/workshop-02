@@ -1,2 +1,11 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿using FoodManagement.CardManagement.Business;
+using FoodManagement.CardManagement.Repositories;
+using FoodManagement.Core.Abstraction;
+using Microsoft.Extensions.DependencyInjection;
+
+var serviceProvider = new ServiceCollection()
+    .AddSingleton<IFoodService, FoodService>()
+    .AddSingleton<ICardRepository, InMemoryCardRepository>()
+    .BuildServiceProvider();
+
+var foodService = serviceProvider.GetRequiredService<IFoodService>();

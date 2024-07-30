@@ -1,5 +1,8 @@
-﻿namespace FoodManagement.CardManagement.Business;
+﻿using FoodManagement.Core.Models;
 
-internal interface ICardRepository
+namespace FoodManagement.Core.Abstraction;
+
+public interface ICardRepository
 {
+    void AddFoodToCard(UserId userId, Food food);
 }

@@ -2,6 +2,10 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FoodManagement", "FoodManagement\FoodManagement.csproj", "{11F96027-7B6E-4490-96F5-3161821AFE83}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FoodManagement.Core", "FoodManagement.Core\FoodManagement.Core.csproj", "{191ECEBE-B0B6-4CD9-9723-092D2025090D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FoodManagement.Test", "FoodManagement.Test\FoodManagement.Test.csproj", "{2D55A298-B85A-483A-8E52-A1114DE0074B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -12,5 +16,13 @@ Global
 		{11F96027-7B6E-4490-96F5-3161821AFE83}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{11F96027-7B6E-4490-96F5-3161821AFE83}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{11F96027-7B6E-4490-96F5-3161821AFE83}.Release|Any CPU.Build.0 = Release|Any CPU
+		{191ECEBE-B0B6-4CD9-9723-092D2025090D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{191ECEBE-B0B6-4CD9-9723-092D2025090D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{191ECEBE-B0B6-4CD9-9723-092D2025090D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{191ECEBE-B0B6-4CD9-9723-092D2025090D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2D55A298-B85A-483A-8E52-A1114DE0074B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2D55A298-B85A-483A-8E52-A1114DE0074B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2D55A298-B85A-483A-8E52-A1114DE0074B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2D55A298-B85A-483A-8E52-A1114DE0074B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

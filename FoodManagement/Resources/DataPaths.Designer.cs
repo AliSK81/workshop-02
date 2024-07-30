@@ -58,5 +58,14 @@ namespace FoodManagement.Resources {
                 resourceCulture = value;
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Resources/Foods.json.
+        /// </summary>
+        internal static string FoodsPath {
+            get {
+                return ResourceManager.GetString("FoodsPath", resourceCulture);
+            }
+        }
     }
 }

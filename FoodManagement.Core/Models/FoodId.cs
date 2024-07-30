@@ -1,6 +1,6 @@
 ﻿namespace FoodManagement.Core.Models;
 
-public class FoodId
+[StronglyTypedId(backingType: StronglyTypedIdBackingType.Long)]
+public partial struct FoodId
 {
-    
 }

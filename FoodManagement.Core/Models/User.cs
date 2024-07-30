@@ -2,5 +2,5 @@
 
 public class User
 {
-    
+    public UserId Id { get; init; }
 }

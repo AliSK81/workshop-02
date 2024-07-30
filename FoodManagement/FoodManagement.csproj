@@ -7,4 +7,35 @@
         <Nullable>enable</Nullable>
     </PropertyGroup>
 
+    <ItemGroup>
+      <ProjectReference Include="..\FoodManagement.Core\FoodManagement.Core.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <EmbeddedResource Update="Resources\ErrorMessages.resx">
+        <Generator>ResXFileCodeGenerator</Generator>
+        <LastGenOutput>ErrorMessages.Designer.cs</LastGenOutput>
+      </EmbeddedResource>
+      <EmbeddedResource Update="Resources\DataPaths.resx">
+        <Generator>ResXFileCodeGenerator</Generator>
+        <LastGenOutput>DataPaths.Designer.cs</LastGenOutput>
+      </EmbeddedResource>
+    </ItemGroup>
+
+    <ItemGroup>
+      <Compile Update="Resources\ErrorMessages.Designer.cs">
+        <Generator>MSBuild:GenerateCodeFromAttributes</Generator>
+        <DependentUpon>ErrorMessages.resx</DependentUpon>
+      </Compile>
+      <Compile Update="Resources\DataPaths.Designer.cs">
+        <DesignTime>True</DesignTime>
+        <AutoGen>True</AutoGen>
+        <DependentUpon>DataPaths.resx</DependentUpon>
+      </Compile>
+    </ItemGroup>
+    
+    <ItemGroup>
+        <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="8.0.0" />
+    </ItemGroup>
+
 </Project>

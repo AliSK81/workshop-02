@@ -1,12 +1,14 @@
 ﻿using FoodManagement.Core.Abstraction;
-using FoodManagement.Core.Models;
+using Newtonsoft.Json;
 
 namespace FoodManagement.FileManagement.Business;
 
-public class FoodJsonReader: IFileReader<Food>
+public class JsonReader<TOut> : IFileReader<TOut>
 {
-    public List<Food> Read(string filePath)
+    public List<TOut> Read(string filePath)
     {
-        throw new NotImplementedException();
+        using var r = new StreamReader(filePath);
+        var json = r.ReadToEnd();
+        return JsonConvert.DeserializeObject<List<TOut>>(json);
     }
 }

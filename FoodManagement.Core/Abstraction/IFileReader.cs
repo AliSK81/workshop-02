@@ -1,6 +1,6 @@
 ﻿namespace FoodManagement.Core.Abstraction;
 
-public interface IFileReader
+public interface IFileReader<TOut>
 {
-    
+    List<TOut> Read(string filePath);
 }

@@ -1,6 +1,5 @@
 ﻿namespace FoodManagement.Core.Exceptions;
 
-public class FoodNotFoundException
+public class FoodNotFoundException : Exception
 {
-    
 }
